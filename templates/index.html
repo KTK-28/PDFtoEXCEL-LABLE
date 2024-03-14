@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/ms-excel.ico">
+    <title>File Upload</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+   <div class="outer">
+    <div class="header">
+        <div class="hleft">
+            <img src="static/your.png" width="100%" height="100%" alt="">
+        </div>
+        <div class="hright">hkpdf</div>
+    </div>
+    <div class="text">PDF to Excel And Label in seconds</div>
+    <div class="text2">Most Popular Amozon PDF Tool</div>
+    <div class="uplod">
+        <div class="container">
+            <h1>File Upload</h1>
+            <div class="border-box">
+                <div class="container2">
+            <div class="drop-container" id="dropContainer">
+                <form id="uploadForm" action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept=".pdf" id="fileInput" />
+                    <button type="button" onclick="uploadFile()">Upload</button>
+                </form>
+                <p class="drop-message" id="dropMessage">Drop your file here</p>
+            </div>
+    <div class="box2">
+            <div class="download-links">  
+                
+                <!-- Do not Change this part in your index.html -->
+                {% if excel_link %}
+                    <p><a href="{{ excel_link }}" download>Download Excel</a></p> 
+                {% else %}
+                    <p>No Excel file generated.</p>
+                {% endif %} 
+            
+                
+                {% if labels_link %}
+                    <p><a href="{{ labels_link }}" download>Download Labels</a></p>
+                {% else %}
+                    <p>No label files generated.</p>
+                {% endif %}
+            </div>
+            </div>
+            
+    
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><div class="fleft"><h2>How To Convert PDF to Excel for Free</h2>
+        <p>1.Choose or drop your PDF into the converter above</p>
+        <p>2. Hit the upload Button </p>
+        <p>3.Wait for us to convert your PDF to an editable Excel sheet</p>
+        <p>Hit “Download” or share your document—done!</p></div>
+        <div class="fright"> 
+           <div class="img">
+            <img src="static/harsh.png" width="70%" height="50%" alt="">
+           </div>
+        </div>
+    </div>
+</div>
+
+   
+   </div>
+</body>
+</html>
+
+
+
+
+<!-- {% if excel_link %}
+    <p><a href="{{ excel_link }}" download>Download Excel</a></p> 
+{% else %}
+    <p>No Excel file generated.</p>
+{% endif %} 
+            
+                
+{% if labels_link %}
+    <p><a href="{{ labels_link }}" download>Download Labels</a></p>
+{% else %}
+    <p>No label files generated.</p>
+{% endif %} -->
+
+

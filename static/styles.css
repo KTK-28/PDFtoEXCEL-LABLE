@@ -1,0 +1,217 @@
+/* styles.css */
+
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+body{
+    background-color: #fffff0;
+    padding: 0px;
+    margin: 0px;
+}
+.outer{
+    width: 1200px;
+    background-color: #fffff0;
+    margin: 0 auto;
+    height: 700px;
+    font-family: 'Salsa', cursive;
+}
+
+.header{
+    width:1200px;
+    height:150px;
+    background-color: #fffff0;
+}
+
+.text{
+    width: 1200px;
+    height: 100px;
+    background-color: #fffff0;
+    font-size: 70px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.text2{
+    width: 1200px;
+    height: 50px;
+    background-color: #fffff0;
+    font-size: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.upload{
+    width: 1200px;
+    height: 400px;
+    background-color: khaki;
+
+}
+
+.container {
+    text-align: center;
+}
+
+
+.drop-over {
+    border-color: #4CAF50;
+}
+
+.drop-message {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.download-links {
+    margin-top: 20px;
+}
+
+.hleft{
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 0 50px;
+    float: left;
+    background-color: #fffff0;
+   
+}
+
+.hright{
+    width: 400px;
+    height: 100px;
+    background-color: #fffff0;
+    float: right;
+    margin: 25px 50px 0 0;
+    font-size: 50px;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.border-box {
+    width: 1200px;
+    height: 200px;
+    border: 2px dashed #000000;
+    transition: border-width 0.3s ease;
+    
+  }
+  
+  .border-box:hover {
+    border-width: 5px;
+  }
+
+  .container2{
+     margin: 20px 0px 0px 0px;
+     height: 500px;
+    }
+
+
+
+    .fleft{
+        width: 600px;
+        height: 360px;
+        float: left;
+        margin: 25px 50px  0;
+        font-size: 20px;
+        color:#000000 ;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    
+    .fright{
+        width: 300px;
+        height: 360px;
+        margin: 25px 25px 0px 0px;
+        float: right;
+        background-color: #fffff0;
+    }
+    
+    .img{
+        margin: 70px 25px 0px 0px;
+        
+    }
+ 
+      /* Style for the form container */
+      #uploadForm {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px dashed #000000; /* Dashed border style for the form */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      /* Style for the file input */
+      #fileInput {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 2px dashed #000000; /* Dashed border style for the file input */
+        border-radius: 3px;
+      }
+  
+      /* Style for the upload button */
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+  
+      /* Hover effect for the button */
+      button:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+      }
+
+         /* Style for the download links container */
+    .download-links {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px dashed #000000; /* Dashed border style for the container */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: larger;
+        
+      }
+  
+      /* Style for the download links */
+      .download-links a {
+        color: #4CAF50; /* Link color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+  
+      /* Hover effect for the links */
+      .download-links a:hover {
+        color: #45a049;
+      }
+  
+      /* Style for the nested div */
+      .download-links .d2 {
+        margin-top: 10px;
+      }
+
+      .box2{
+        width: 1200px;
+        height: 200px;
+      }
+
+      .footer{
+        width: 1200px;
+        height: 400px;
+        background-color: fffff0;
+        align-items: center;
+        margin: 0 auto;
+       
+    }
